@@ -1,0 +1,103 @@
+.filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pic {
+    width: 370px;
+    transition: color 250ms var(--timing-function),
+        box-shadow 250ms var(--timing-function),
+        background-color 250ms var(--timing-function);
+}
+
+.card {
+    display: block;
+    transition: color 250ms var(--timing-function),
+        border 250ms var(--timing-function),
+        box-shadow 250ms var(--timing-function),
+        background-color 250ms var(--timing-function);
+
+    &:hover, &:focus {
+        box-shadow: 0px 1px 1px var(--boxshadow-three),
+        0px 4px 4px var(--boxshadow-four),
+        1px 4px 6px var(--boxshadow-five);
+        
+    } 
+}
+
+.top-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.top-text {
+    position: absolute;
+    top: 0;
+    padding: 63px 24px;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    background-color: rgba(33, 150, 243, 0.9);
+    color: var(--primary-white-color);
+    height: 100%;
+    transform: translateY(100%);
+    transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function), transform 250ms var(--timing-function);
+    overflow: auto;
+
+    .pic:hover &,
+    .pic:focus & {
+        transform: translateY(0);
+    }
+        
+}
+
+.project.list .pic {
+    display: block;
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    border: 1px solid var(--border-color);
+}
+
+.project.list .pic:nth-child(3n) {
+    margin-right: 0;
+}
+
+.project.list .pic:nth-last-child(-n+3) {
+    margin-bottom: 0;
+}
+
+.cards {
+    border-radius: 0px 0px 4px 4px;
+    padding: 20px 24px;
+}
+
+.project-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
+}
+
+.project-name {
+    margin-bottom: 4px;
+}
+
+.project-work {
+    font-size: 16px;
+    line-height: 1.88;
+    color: var(--primary-text-color);
+}

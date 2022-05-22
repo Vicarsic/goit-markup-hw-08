@@ -1,0 +1,75 @@
+.filter .but+.but {
+    margin-left: 8px;
+}
+
+.hero-button {
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+}
+
+.buttons {
+    color: var(--title-text-color);
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    border: none;
+    padding: 6px 22px;
+    font-family: inherit;
+    border-radius: 4px;
+    background-color: var(--team-bgd-color);
+    transition: color 250ms var(--timing-function),
+        box-shadow 250ms var(--timing-function),
+        background-color 250ms var(--timing-function);
+
+    &:hover, &:focus {
+        background-color: var(--accent-color);
+        color: var(--primary-white-color);
+        
+        background-color: var(--accent-color);
+        
+        box-shadow: 0px 3px 1px var(--bowshadow-one),
+        0px 1px 2px var(--boxshadow-two),
+        0px 2px 2px var(--boxshadow-three);
+        border-radius: 4px;
+        transition: color 250ms var(--timing-function),
+        border-radius 250ms var(--timing-function),
+        box-shadow 250ms var(--timing-function),
+        background-color 250ms var(--timing-function);
+    }    
+}
+
+.button {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    align-items: center;
+    border: none;
+    padding: 10px 32px;
+    cursor: pointer;
+    color: var(--primary-white-color);
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    letter-spacing: 0.06em;
+    transition: color 250ms var(--timing-function),
+        border-radius 250ms var(--timing-function),
+        box-shadow 250ms var(--timing-function),
+        background-color 250ms var(--timing-function);
+
+    &:hover, &:focus {
+        background-color: var(--accent-color);
+        transition: background-color 250ms var(--timing-function);
+    }    
+}
+
+.but {
+    transition: color 250ms var(--timing-function),
+        border-radius 250ms var(--timing-function),
+        box-shadow 250ms var(--timing-function),
+        background-color 250ms var(--timing-function);
+}

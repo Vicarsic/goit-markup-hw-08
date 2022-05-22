@@ -1,0 +1,76 @@
+.clients {
+    background-color: var(--primary-white-color);
+
+}
+
+.client-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--title-text-color);
+    margin-bottom: 50px;
+}
+
+.client-list {
+    display: flex;
+
+}
+
+.client-link {
+    display: flex;
+    border-color: var(--icon-color);
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: transparent;
+    transition: border-color 250ms var(--timing-function),
+        background-color 250ms var(--timing-function), fill 250ms var(--timing-function);
+
+    &:hover, &:focus {
+        border-color: var(--accent-color);
+        fill: var(--accent-color);
+        transition: border-color 250ms var(--timing-function), fill 250ms var(--timing-function);
+    }
+    &:hover .svg, &:focus .svg {
+        fill: var(--accent-color);
+        border-color: var(--accent-color);
+        transition: border-color 250ms var(--timing-function), fill 250ms var(--timing-function);
+    }
+}
+
+
+.client-icon {
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+    transition: color 250ms var(--timing-function),
+        border-color 250ms var(--timing-function),
+        background-color 250ms var(--timing-function);
+
+    &:hover, &:focus {
+        border-color: var(--accent-color);
+        transition: border-color 250ms var(--timing-function);
+    }
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+.svg {
+    fill: var(--icon-color);
+    transition: fill 250ms var(--timing-function);
+}
+
+.client-icon+.client-icon {
+    margin-left: 30px;
+}
+
+
