@@ -75,12 +75,6 @@ body {
   color: var(--primary-text-color);
 }
 
-.link:hover,
-.link:focus {
-  color: var(--accent-color);
-  transition: color 250ms var(--timing-function);
-}
-
 .filter .but + .but {
   margin-left: 8px;
 }
@@ -141,11 +135,25 @@ body {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .section {
