@@ -131,8 +131,8 @@
     background-color: var(--backgrcolor);
     border-radius: 50%;
     fill: var(--primary-white-color);
-    transition: border-radius 250ms var(--timing-function),
-        background-color 250ms var(--timing-function);
+    transition: background-color 250ms var(--timing-function),
+        fill 250ms var(--timing-function);
 
 }
 

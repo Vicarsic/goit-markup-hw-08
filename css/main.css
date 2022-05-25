@@ -881,6 +881,11 @@ body {
 .doing {
   padding-top: 0;
 }
+@media screen and (max-width: 1199px) {
+  .doing {
+    display: none;
+  }
+}
 
 .doing__title {
   font-weight: 700;
@@ -1041,7 +1046,17 @@ body {
 
 .our__masters-soc-list {
   display: flex;
-  justify-content: center;
+}
+@media screen and (max-width: 1199px) {
+  .our__masters-soc-list {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our__masters-soc-list {
+    margin: 0 32px 0 32px;
+    justify-content: space-between;
+  }
 }
 
 .our__masters-soc-item + .our__masters-soc-item {
@@ -1057,7 +1072,7 @@ body {
   background-color: var(--backgrcolor);
   border-radius: 50%;
   fill: var(--primary-white-color);
-  transition: border-radius 250ms var(--timing-function), background-color 250ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function);
 }
 
 .our__masters-soc-icon {
