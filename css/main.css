@@ -411,7 +411,6 @@ body {
 }
 
 .header__container {
-  display: flex;
   align-items: center;
   height: 60px;
 }
@@ -449,6 +448,12 @@ body {
   display: flex;
   align-items: center;
   transition: color 250ms var(--timing-function);
+  height: 60px;
+}
+@media screen and (min-width: 767px) {
+  .navigation {
+    height: 80px;
+  }
 }
 
 .site-nav {
@@ -569,6 +574,11 @@ body {
   text-align: justify;
 }
 
+@media screen and (max-width: 767px) {
+  .contact {
+    display: none;
+  }
+}
 .menu {
   display: flex;
   flex-grow: 1;
