@@ -5,10 +5,17 @@
 .header__container {
     display: flex;
     align-items: center;
+    height: 60px;
+    
+    @media screen and (min-width: 767px) {
+        height: 80px;;
+    }
+    
 }
 
 .header {
     border-bottom: 1px solid var(--border-button-color);
+
 }
 
 .link:hover,

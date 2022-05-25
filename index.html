@@ -26,22 +26,25 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body class="page">
-
     <!--Шапка сайта -->
     <header class="header">
       <div class="container header__container">
         <nav class="navigation">
           <a class="logo" href="">Web<span class="logo__black">Studio</span></a>
-          
+
           <!-- Mob menu open -->
-          
+
           <div class="menu">
             <button
               class="menu-toggle js-open-menu"
               aria-expanded="false"
               aria-controls="mobile-menu"
             >
-              <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <svg
+                width="40"
+                height="40"
+                aria-label="Переключатель мобильного меню"
+              >
                 <use href="./images/icon.svg#menu"></use>
               </svg>
             </button>
@@ -89,12 +92,16 @@
           </li>
         </ul>
       </div>
-      
+
       <!-- Mobile menu -->
 
       <div class="menu-container js-menu-container" id="mobile-menu">
         <button class="menu-toggle js-close-menu">
-          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
             <use href="./images/icon.svg#cross"></use>
           </svg>
         </button>
@@ -104,12 +111,18 @@
         <nav class="mobil-nav">
           <ul class="list mobil-nav__list">
             <li class="mobil-nav__item">
-              <a class="link mobil-nav__link current" href="./index.html">Студия</a>
+              <a class="link mobil-nav__link current" href="./index.html"
+                >Студия</a
+              >
             </li>
             <li class="mobil-nav__item">
-              <a class="link mobil-nav__link" href="./portfolio.html">Портфолио</a>
+              <a class="link mobil-nav__link" href="./portfolio.html"
+                >Портфолио</a
+              >
             </li>
-            <li class="mobil-nav__item"><a class="link mobil-nav__link" href="">Контакты</a></li>
+            <li class="mobil-nav__item">
+              <a class="link mobil-nav__link" href="">Контакты</a>
+            </li>
           </ul>
         </nav>
 
@@ -138,16 +151,24 @@
 
         <ul class="list mobile-menu-social">
           <li class="mobile-menu-social__item">
-            <a class="link mobile-menu-social__link" href="instagram.com">Instagram</a>
+            <a class="link mobile-menu-social__link" href="instagram.com"
+              >Instagram</a
+            >
           </li>
           <li class="mobile-menu-social__item">
-            <a class="link mobile-menu-social__link" href="twitter.com">Twitter</a>
+            <a class="link mobile-menu-social__link" href="twitter.com"
+              >Twitter</a
+            >
           </li>
           <li class="mobile-menu-social__item">
-            <a class="link mobile-menu-social__link" href="facebook.com">Facebook</a>
+            <a class="link mobile-menu-social__link" href="facebook.com"
+              >Facebook</a
+            >
           </li>
           <li class="mobile-menu-social__item">
-            <a class="link mobile-menu-social__link" href="linkedin.com">Linkedin</a>
+            <a class="link mobile-menu-social__link" href="linkedin.com"
+              >Linkedin</a
+            >
           </li>
         </ul>
       </div>
@@ -189,7 +210,7 @@
             </li>
             <li class="feature__title">
               <div class="feature__item">
-                <svg class="feature__icon"width="70" height="70">
+                <svg class="feature__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
@@ -235,7 +256,8 @@
           <ul class="doing__list list">
             <li class="doing__item">
               <div class="doing__desk">
-                <img class="doing-img"
+                <img
+                  class="doing-img"
                   src="./images/img-1.jpg"
                   alt="Руководитель проверяет код"
                   width="370"
@@ -246,7 +268,8 @@
             </li>
             <li class="doing__item">
               <div class="doing__desk">
-                <img class="doing__img"
+                <img
+                  class="doing__img"
                   src="./images/img-2.jpg"
                   alt="Работник настраивает экран"
                   width="370"
@@ -257,7 +280,8 @@
             </li>
             <li class="doing__item">
               <div class="doing__desk">
-                <img class="doing__img"
+                <img
+                  class="doing__img"
                   src="./images/img-3.jpg"
                   alt="Работник ищет цвет"
                   width="370"
@@ -279,19 +303,32 @@
             <li class="team-item">
               <picture>
                 <source
-                  srcset="./images/team-card-1-450.jpg, ./images/team-card-1-900.jpg"
+                  srcset="
+                    ./images/team-card-1-450.jpg,
+                    ./images/team-card-1-900.jpg
+                  "
                   media="(max-width: 767px)"
                 />
                 <source
-                  srcset="./images/team-card-1-354.jpg, ./images/team-card-1-708.jpg"
+                  srcset="
+                    ./images/team-card-1-354.jpg,
+                    ./images/team-card-1-708.jpg
+                  "
                   media="(min-width: 768px) and (max-width: 1199px)"
                 />
                 <source
-                  srcset="./images/team-card-1-270.jpg, ./images/team-card-1-540.jpg"
+                  srcset="
+                    ./images/team-card-1-270.jpg,
+                    ./images/team-card-1-540.jpg
+                  "
                   media="(min-width: 1200px)"
                 />
 
-                <img class="team-img" src="./images/img-4.jpg" alt="Игорь Демьяненко" />
+                <img
+                  class="team-img"
+                  src="./images/img-4.jpg"
+                  alt="Игорь Демьяненко"
+                />
               </picture>
               <!-- <img class="team-img"
                 src="./images/img-4.jpg"
@@ -337,19 +374,32 @@
             <li class="team-item">
               <picture>
                 <source
-                  srcset="./images/team-card-2-450.jpg, ./images/team-card-2-900.jpg"
+                  srcset="
+                    ./images/team-card-2-450.jpg,
+                    ./images/team-card-2-900.jpg
+                  "
                   media="(max-width: 767px)"
                 />
                 <source
-                  srcset="./images/team-card-2-354.jpg, ./images/team-card-2-708.jpg"
+                  srcset="
+                    ./images/team-card-2-354.jpg,
+                    ./images/team-card-2-708.jpg
+                  "
                   media="(min-width: 768px) and (max-width: 1199px)"
                 />
                 <source
-                  srcset="./images/team-card-2-270.jpg, ./images/team-card-2-540.jpg"
+                  srcset="
+                    ./images/team-card-2-270.jpg,
+                    ./images/team-card-2-540.jpg
+                  "
                   media="(min-width: 1200px)"
                 />
 
-                <img class="team-img" src="./images/img-5.jpg" alt="Ольга Репина" />
+                <img
+                  class="team-img"
+                  src="./images/img-5.jpg"
+                  alt="Ольга Репина"
+                />
               </picture>
               <!-- <img class="team-img"
                 src="./images/img-5.jpg"
@@ -395,19 +445,32 @@
             <li class="team-item">
               <picture>
                 <source
-                  srcset="./images/team-card-3-450.jpg, ./images/team-card-3-900.jpg"
+                  srcset="
+                    ./images/team-card-3-450.jpg,
+                    ./images/team-card-3-900.jpg
+                  "
                   media="(max-width: 767px)"
                 />
                 <source
-                  srcset="./images/team-card-3-354.jpg, ./images/team-card-3-708.jpg"
+                  srcset="
+                    ./images/team-card-3-354.jpg,
+                    ./images/team-card-3-708.jpg
+                  "
                   media="(min-width: 768px) and (max-width: 1199px)"
                 />
                 <source
-                  srcset="./images/team-card-3-270.jpg, ./images/team-card-3-540.jpg"
+                  srcset="
+                    ./images/team-card-3-270.jpg,
+                    ./images/team-card-3-540.jpg
+                  "
                   media="(min-width: 1200px)"
                 />
 
-                <img class="team-img" src="./images/img-6.jpg" alt="Николай Тарасов" />
+                <img
+                  class="team-img"
+                  src="./images/img-6.jpg"
+                  alt="Николай Тарасов"
+                />
               </picture>
               <!-- <img class="team-img"
                 src="./images/img-6.jpg"
@@ -453,19 +516,32 @@
             <li class="team-item">
               <picture>
                 <source
-                  srcset="./images/team-card-4-450.jpg, ./images/team-card-4-900.jpg"
+                  srcset="
+                    ./images/team-card-4-450.jpg,
+                    ./images/team-card-4-900.jpg
+                  "
                   media="(max-width: 767px)"
                 />
                 <source
-                  srcset="./images/team-card-4-354.jpg, ./images/team-card-4-708.jpg"
+                  srcset="
+                    ./images/team-card-4-354.jpg,
+                    ./images/team-card-4-708.jpg
+                  "
                   media="(min-width: 768px) and (max-width: 1199px)"
                 />
                 <source
-                  srcset="./images/team-card-4-270.jpg, ./images/team-card-4-540.jpg"
+                  srcset="
+                    ./images/team-card-4-270.jpg,
+                    ./images/team-card-4-540.jpg
+                  "
                   media="(min-width: 1200px)"
                 />
 
-                <img class="team-img" src="./images/img-7.jpg" alt="Михаил Ермаков" />
+                <img
+                  class="team-img"
+                  src="./images/img-7.jpg"
+                  alt="Михаил Ермаков"
+                />
               </picture>
               <!-- <img class="team-img"
                 src="./images/img-7.jpg"
@@ -514,7 +590,7 @@
 
       <!-- Наши клиенты -->
 
-      <!-- <section class="section clients">
+      <section class="section clients">
         <div class="container">
           <h2 class="client-title">Постоянные клиенты</h2>
           <ul class="client-list">
@@ -581,7 +657,7 @@
           </ul>
         </div>
       </section>
-    </main> -->
+    </main>
 
     <!-- Футер -->
 
@@ -594,9 +670,9 @@
             >
           </div> -->
 
-          <!-- Адресс -->
+    <!-- Адресс -->
 
-          <!-- <address>
+    <!-- <address>
             <ul class="address list">
               <li class="address__item">
                 <a
@@ -625,9 +701,9 @@
           </address>
         </div> -->
 
-        <!-- Футер Соц сети  -->
+    <!-- Футер Соц сети  -->
 
-        <!-- <div class="social">
+    <!-- <div class="social">
           <h2 class="social__join-list">присоединяйтесь</h2>
           <ul class="social__masters-soc-list">
             <li class="social__masters-soc-item">
@@ -677,9 +753,9 @@
           </ul>
         </div> -->
 
-        <!-- Подписка -->
+    <!-- Подписка -->
 
-        <!-- <form class="subscribe">
+    <!-- <form class="subscribe">
           <p class="subscribe__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
           <div class="subscribe__field" role="group">
             <input
@@ -700,7 +776,7 @@
     </footer> -->
 
     <!-- Modal window -->
-    
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>

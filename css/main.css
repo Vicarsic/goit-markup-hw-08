@@ -413,6 +413,12 @@ body {
 .header__container {
   display: flex;
   align-items: center;
+  height: 60px;
+}
+@media screen and (min-width: 767px) {
+  .header__container {
+    height: 80px;
+  }
 }
 
 .header {
