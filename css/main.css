@@ -1482,6 +1482,24 @@ body {
   margin-left: 70px;
 }
 
+@media screen and (max-width: 767x) {
+  .social {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .social {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .social {
+    margin-right: 70px;
+    flex-grow: 1;
+  }
+}
+
 .social__title {
   font-weight: 700;
   font-size: 14px;
