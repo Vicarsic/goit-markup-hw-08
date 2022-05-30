@@ -1453,25 +1453,25 @@ body {
   transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
 
-.address__contact-item {
+.address__contact--item {
   font-size: 14px;
   line-height: 1.71;
   color: var(--contact-color);
   transition: color 250ms var(--timing-function);
 }
 
-.address__contact-item:not(:last-child) {
+.address__contact--item:not(:last-child) {
   margin-top: 9px;
   margin-bottom: 9px;
 }
 
-.address__contact-item:last-child {
+.address__contact--item:last-child {
   margin-top: 9px;
   margin-bottom: 30px;
 }
 
-.address__contact-item:hover,
-.address__contact-item:focus,
+.address__contact--item:hover,
+.address__contact--item:focus,
 .address__city:hover,
 .address__city:focus {
   color: var(--accent-color);
