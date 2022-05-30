@@ -1,6 +1,6 @@
-.filter .but+.but {
-    margin-left: 8px;
-}
+// .filter .but+.but {
+//     margin-left: 8px;
+// }
 
 .button {
     display: block;
@@ -68,8 +68,22 @@
 }
 
 .but {
+    margin-right: 8px;
     transition: color 250ms var(--timing-function),
         border-radius 250ms var(--timing-function),
         box-shadow 250ms var(--timing-function),
         background-color 250ms var(--timing-function);
+
+    &:last-child {
+        margin-right: 0;
+    }
+    @media screen and (max-width: 767px) {
+        margin-bottom: 15px;
+        &:nth-child(n+4) {
+            margin-bottom: 0;
+        }
+       
+    
+    }
+    
 }

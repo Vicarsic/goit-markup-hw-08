@@ -31,8 +31,8 @@
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-        display: flex;
-        flex-wrap: wrap;
+        // display: flex;
+        // flex-wrap: wrap;
     }
 
 
@@ -158,8 +158,8 @@
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-        display: flex;
-        flex-wrap: wrap;
+        // display: flex;
+        // flex-wrap: wrap;
     }
 
 
@@ -234,6 +234,10 @@
 
 .subscribe {
     display: block;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-top: 60px;
+    }
+
     // 1200
     // width: 570px;
     // height: 86px;

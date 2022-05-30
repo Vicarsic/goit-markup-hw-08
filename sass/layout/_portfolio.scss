@@ -1,21 +1,39 @@
 .filter {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
     margin-bottom: 50px;
+
+
+    // @media screen and (max-width: 767px) {
+    //     // display: flex;
+    //     // flex-wrap: wrap;
+    //     // margin: -15px;
+    // }
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+    }
+
 }
 
 .project {
-    display: flex;
-    flex-wrap: wrap;
+    
+    
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+    
+
 }
 
 .pic {
-    width: 370px;
+    width: 100%;
     transition: color 250ms var(--timing-function),
         box-shadow 250ms var(--timing-function),
         background-color 250ms var(--timing-function);
@@ -62,22 +80,49 @@
         
 }
 
-.project.list .pic {
+.pic {
     display: block;
-    width: calc((100% - 60px) / 3);
-    margin-right: 30px;
-    margin-bottom: 30px;
-
     border: 1px solid var(--border-color);
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    
+    }
+
+
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 60px) / 2);
+        margin: 15px;
+                
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 90px) / 3);
+        margin: 15px;
+    
+    }
 }
 
-.project.list .pic:nth-child(3n) {
-    margin-right: 0;
-}
+// .project.list .pic {
+//     display: block;
+//     width: calc((100% - 60px) / 3);
+//     margin-right: 30px;
+//     margin-bottom: 30px;
 
-.project.list .pic:nth-last-child(-n+3) {
-    margin-bottom: 0;
-}
+    
+// }
+
+
+// .project.list .pic:nth-child(3n) {
+//     margin-right: 0;
+// }
+
+// .project.list .pic:nth-last-child(-n+3) {
+//     margin-bottom: 0;
+// }
 
 .cards {
     border-radius: 0px 0px 4px 4px;

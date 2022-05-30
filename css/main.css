@@ -79,10 +79,6 @@ body {
   color: var(--primary-text-color);
 }
 
-.filter .but + .but {
-  margin-left: 8px;
-}
-
 .button {
   display: block;
   text-align: center;
@@ -135,7 +131,19 @@ body {
 }
 
 .but {
+  margin-right: 8px;
   transition: color 250ms var(--timing-function), border-radius 250ms var(--timing-function), box-shadow 250ms var(--timing-function), background-color 250ms var(--timing-function);
+}
+.but:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 767px) {
+  .but {
+    margin-bottom: 15px;
+  }
+  .but:nth-child(n+4) {
+    margin-bottom: 0;
+  }
 }
 
 .container {
@@ -1272,21 +1280,28 @@ body {
 .filter {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
+@media screen and (min-width: 768px) {
+  .filter {
+    justify-content: center;
+  }
+}
 
-.project {
-  display: flex;
-  flex-wrap: wrap;
+@media screen and (min-width: 768px) {
+  .project {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 .pic {
-  width: 370px;
+  width: 100%;
   transition: color 250ms var(--timing-function), box-shadow 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
 
@@ -1321,20 +1336,29 @@ body {
   transform: translateY(0);
 }
 
-.project.list .pic {
+.pic {
   display: block;
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
-  margin-bottom: 30px;
   border: 1px solid var(--border-color);
 }
-
-.project.list .pic:nth-child(3n) {
-  margin-right: 0;
+@media screen and (max-width: 767px) {
+  .pic {
+    margin-bottom: 30px;
+  }
+  .pic:last-child {
+    margin-bottom: 0;
+  }
 }
-
-.project.list .pic:nth-last-child(-n+3) {
-  margin-bottom: 0;
+@media screen and (min-width: 768px) {
+  .pic {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pic {
+    width: calc((100% - 90px) / 3);
+    margin: 15px;
+  }
 }
 
 .cards {
@@ -1389,12 +1413,6 @@ body {
 @media screen and (max-width: 767x) {
   .footer__contacts {
     text-align: center;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer__contacts {
-    display: flex;
-    flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1508,12 +1526,6 @@ body {
     margin-bottom: 60px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .social {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
 @media screen and (min-width: 1200px) {
   .social {
     margin-left: 70px;
@@ -1580,6 +1592,11 @@ body {
 /* Футер Subscribe / Подписаться */
 .subscribe {
   display: block;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .subscribe {
+    margin-top: 60px;
+  }
 }
 
 .subscribe__title {
