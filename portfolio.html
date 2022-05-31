@@ -33,22 +33,45 @@
             >Web<span class="logo__black">Studio</span></a
           >
 
-          <ul class="site-nav">
-            <li class="site-nav__item">
-              <a class="site-nav__link link" href="./index.html">Студия</a>
-            </li>
-            <li class="site-nav__item">
-              <a
-                class="site-nav__link link site-nav__link--current"
-                href="./portfolio.html"
-                >Портфолио</a
+          <!-- Mob menu open -->
+
+          <div class="menu">
+            <button
+              type="button"
+              class="menu-toggle js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg
+                width="40"
+                height="40"
+                aria-label="Переключатель мобильного меню"
               >
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link link" href="./index.html">Контакты</a>
-            </li>
-          </ul>
+                <use href="./images/icons.svg#menu"></use>
+              </svg>
+            </button>
+
+            <!-- Навигация -->
+
+            <ul class="site-nav">
+              <li class="site-nav__item">
+                <a class="site-nav__link link" href="./index.html">Студия</a>
+              </li>
+              <li class="site-nav__item">
+                <a
+                  class="site-nav__link link site-nav__link--current"
+                  href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link link" href="./index.html">Контакты</a>
+              </li>
+            </ul>
+          </div>
         </nav>
+
+        <!-- Контакты -->
 
         <ul class="contact">
           <li class="contact__item">
@@ -68,6 +91,87 @@
             </a>
           </li>
         </ul>
+      </div>
+
+      <!-- Mobile menu -->
+
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use href="./images/icons.svg#cross"></use>
+          </svg>
+        </button>
+
+        <!-- Site Nav -->
+
+        <nav class="mobil-nav">
+          <ul class="list mobil-nav__list">
+            <li class="mobil-nav__item">
+              <a class="link mobil-nav__link current" href="./index.html"
+                >Студия</a
+              >
+            </li>
+            <li class="mobil-nav__item">
+              <a class="link mobil-nav__link" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="mobil-nav__item">
+              <a class="link mobil-nav__link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Contacts -->
+        <div class="mobil-headercont__wrap">
+          <ul class="list mobil-headercont">
+            <li class="mobil-headercont__item">
+              <div class="mobil-phone">
+                <a
+                  class="mobil-headercont__link mobil-headercont__link--number link"
+                  href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </div>
+            </li>
+            <li class="mobil-headercont__item">
+              <div class="mobil-mail">
+                <a
+                  class="mobil-headercont__link mobil-headercont__link--mail link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </div>
+            </li>
+          </ul>
+
+          <ul class="list mobile-menu-social">
+            <li class="mobile-menu-social__item">
+              <a class="link mobile-menu-social__link" href="instagram.com"
+                >Instagram</a
+              >
+            </li>
+            <li class="mobile-menu-social__item">
+              <a class="link mobile-menu-social__link" href="twitter.com"
+                >Twitter</a
+              >
+            </li>
+            <li class="mobile-menu-social__item">
+              <a class="link mobile-menu-social__link" href="facebook.com"
+                >Facebook</a
+              >
+            </li>
+            <li class="mobile-menu-social__item">
+              <a class="link mobile-menu-social__link" href="linkedin.com"
+                >Linkedin</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -96,12 +200,34 @@
             <li class="pic">
               <a class="link card" href="./index.html">
                 <div class="top-wrap">
-                  <img
-                    src="./images/portfolio/img-10.jpg"
-                    alt="Экран ноутбука с открытым сайтом"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-1-450.jpg 1x,
+                        ./images/project-1-900.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-1-354.jpg 1x,
+                        ./images/project-1-708.jpg 2x
+                      "
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-1-370.jpg 1x,
+                        ./images/project-1-740.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      class="project-list__img"
+                      src="./images/project-1-354.jpg"
+                      alt="Отображение веб-сайта"
+                    />
+                  </picture>
                   <p class="top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -117,12 +243,34 @@
             <li class="pic">
               <a class="link card" href="./index.html">
                 <div class="top-wrap">
-                  <img
-                    src="./images/portfolio/img-11.jpg"
-                    alt="Два баскетболиста с мячом"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-2-450.jpg 1x,
+                        ./images/project-2-900.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-2-354.jpg 1x,
+                        ./images/project-2-708.jpg 2x
+                      "
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-2-370.jpg 1x,
+                        ./images/project-2-740.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      class="project-list__img"
+                      src="./images/project-2-354.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                    />
+                  </picture>
                   <p class="top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -138,12 +286,34 @@
             <li class="pic">
               <a class="link card" href="./index.html">
                 <div class="top-wrap">
-                  <img
-                    src="./images/portfolio/img-12.jpg"
-                    alt="Эмблема ресторана морской еды"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-3-450.jpg 1x,
+                        ./images/project-3-900.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-3-354.jpg 1x,
+                        ./images/project-3-708.jpg 2x
+                      "
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-3-370.jpg 1x,
+                        ./images/project-3-740.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      class="project-list__img"
+                      src="./images/project-3-354.jpg"
+                      alt="Ресторан Seafood"
+                    />
+                  </picture>
                   <p class="top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -159,12 +329,34 @@
             <li class="pic">
               <a class="link card" href="./index.html">
                 <div class="top-wrap">
-                  <img
-                    src="./images/portfolio/img-13.jpg"
-                    alt="Эмблема ресторана морской еды"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-4-450.jpg 1x,
+                        ./images/project-4-900.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-4-354.jpg 1x,
+                        ./images/project-4-708.jpg 2x
+                      "
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-4-370.jpg 1x,
+                        ./images/project-4-740.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      class="project-list__img"
+                      src="./images/project-4-354.jpg"
+                      alt="Проект Prime"
+                    />
+                  </picture>
                   <p class="top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -180,12 +372,34 @@
             <li class="pic">
               <a class="link card" href="./index.html">
                 <div class="top-wrap">
-                  <img
-                    src="./images/portfolio/img-14.jpg"
-                    alt="Эмблема ресторана морской еды"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-5-450.jpg 1x,
+                        ./images/project-5-900.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-5-354.jpg 1x,
+                        ./images/project-5-708.jpg 2x
+                      "
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-5-370.jpg 1x,
+                        ./images/project-5-740.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      class="project-list__img"
+                      src="./images/project-5-354.jpg"
+                      alt="Проект Boxes"
+                    />
+                  </picture>
                   <p class="top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -201,12 +415,34 @@
             <li class="pic">
               <a class="link card" href="./index.html">
                 <div class="top-wrap">
-                  <img
-                    src="./images/portfolio/img-15.jpg"
-                    alt="Эмблема ресторана морской еды"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-6-450.jpg 1x,
+                        ./images/project-6-900.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-6-354.jpg 1x,
+                        ./images/project-6-708.jpg 2x
+                      "
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-6-370.jpg 1x,
+                        ./images/project-6-740.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      class="project-list__img"
+                      src="./images/project-6-354.jpg"
+                      alt="Inspiration has no Borders"
+                    />
+                  </picture>
                   <p class="top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -222,12 +458,34 @@
             <li class="pic">
               <a class="link card" href="./index.html">
                 <div class="top-wrap">
-                  <img
-                    src="./images/portfolio/img-16.jpg"
-                    alt="Эмблема ресторана морской еды"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-7-450.jpg 1x,
+                        ./images/project-7-900.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-7-354.jpg 1x,
+                        ./images/project-7-708.jpg 2x
+                      "
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-7-370.jpg 1x,
+                        ./images/project-7-740.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      class="project-list__img"
+                      src="./images/project-7-354.jpg"
+                      alt="Издание Limited Edition"
+                    />
+                  </picture>
                   <p class="top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -243,12 +501,34 @@
             <li class="pic">
               <a class="link card" href="./index.html">
                 <div class="top-wrap">
-                  <img
-                    src="./images/portfolio/img-17.jpg"
-                    alt="Эмблема ресторана морской еды"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-8-450.jpg 1x,
+                        ./images/project-8-900.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-8-354.jpg 1x,
+                        ./images/project-8-708.jpg 2x
+                      "
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-8-370.jpg 1x,
+                        ./images/project-8-740.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      class="project-list__img"
+                      src="./images/project-8-354.jpg"
+                      alt="Проект LAB"
+                    />
+                  </picture>
                   <p class="top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -264,12 +544,24 @@
             <li class="pic">
               <a class="link card" href="./index.html">
                 <div class="top-wrap">
-                  <img
-                    src="./images/portfolio/img-18.jpg"
-                    alt="Эмблема ресторана морской еды"
-                    width="370"
-                    height="294"
-                  />
+                  <source
+                      srcset="./images/project-9-450.jpg 1x, ./images/project-9-900.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/project-9-354.jpg 1x, ./images/project-9-708.jpg 2x"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                    />
+                    <source
+                      srcset="./images/project-9-370.jpg 1x, ./images/project-9-740.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      class="project-list__img"
+                      src="./images/project-9-354.jpg"
+                      alt="Growing Business"
+                    />
+                  </picture>
                   <p class="top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -374,5 +666,13 @@
         </form>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
