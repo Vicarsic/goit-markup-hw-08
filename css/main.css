@@ -1633,6 +1633,11 @@ body {
     margin-bottom: 20px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .subscribe__email {
+    width: 358px;
+  }
+}
 
 .subscribe__email:focus {
   outline: none;
