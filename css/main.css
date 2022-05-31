@@ -837,20 +837,17 @@ body {
 .hero {
   display: block;
   max-width: 1600px;
+  background-size: cover;
   margin-left: auto;
   margin-right: auto;
   background-size: auto auto;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
   text-align: center;
 }
 @media screen and (max-width: 767px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-hero-480.jpg");
-    height: 400px;
-    max-width: 768px;
-    background-size: 480px 400px;
   }
 }
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2) {
@@ -867,9 +864,6 @@ body {
 @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-hero-768.jpg");
-    height: 400px;
-    max-width: 1200px;
-    background-size: 768px 400px;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2) {
@@ -882,9 +876,6 @@ body {
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-hero-1600.jpg");
-    height: 600px;
-    max-width: 1600px;
-    background-size: 1600px 600px;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2) {
@@ -1107,23 +1098,6 @@ body {
   display: block;
   width: 100%;
   height: auto;
-}
-@media screen and (max-width: 767px) {
-  .team-img {
-    width: 450px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .team-img {
-    width: 354px;
-    height: 374px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .team-img {
-    width: 270px;
-    height: 260px;
-  }
 }
 
 .our {
