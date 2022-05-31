@@ -1327,6 +1327,7 @@ body {
 .top-text {
   position: absolute;
   top: 0;
+  left: 0;
   padding: 63px 24px;
   font-size: 18px;
   line-height: 1.56;
@@ -1337,9 +1338,11 @@ body {
   transform: translateY(100%);
   transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function), transform 250ms var(--timing-function);
   overflow: auto;
+  opacity: 0;
 }
 .pic:hover .top-text, .pic:focus .top-text {
   transform: translateY(0);
+  opacity: 1;
 }
 
 .pic {
