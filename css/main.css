@@ -1421,6 +1421,12 @@ body {
     text-align: center;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer__contacts {
+    flex-grow: 1;
+  }
+}
+
 .footer__logo {
   display: block;
   margin-bottom: 20px;
