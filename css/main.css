@@ -1375,6 +1375,10 @@ body {
   padding: 20px 24px;
 }
 
+.card {
+  height: 100%;
+}
+
 .project-name {
   font-weight: 700;
   font-size: 18px;

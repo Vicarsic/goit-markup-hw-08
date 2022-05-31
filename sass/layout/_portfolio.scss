@@ -79,7 +79,7 @@
     .pic:focus & {
         transform: translateY(0);
         opacity: 1;
-        
+
     }
         
 }
@@ -132,7 +132,9 @@
     border-radius: 0px 0px 4px 4px;
     padding: 20px 24px;
 }
-
+.card {
+    height: 100%;;
+}
 .project-name {
     font-weight: 700;
     font-size: 18px;
