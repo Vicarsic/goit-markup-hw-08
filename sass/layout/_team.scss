@@ -7,13 +7,16 @@
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
+    margin-bottom: 50px;
     text-align: center;
     color: var(--title-text-color);
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
         font-size: 28px;
         line-height: 1.17;
+        margin-bottom: 30px;
     }
+
 }
 .team-name {
     font-size: 16px;
@@ -24,15 +27,14 @@
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
-    
         margin: -15px;
-        margin-top: 30px;
+        
     }
     
     @media screen and (min-width: 1200px) {
         display: flex;
         margin: -15px;
-        margin-top: 50px;
+        
     }
 }
 

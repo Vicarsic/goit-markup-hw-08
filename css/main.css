@@ -600,8 +600,6 @@ body {
 
 .contact {
   margin-left: auto;
-  padding-top: 21px;
-  padding-bottom: 21px;
 }
 @media screen and (max-width: 767px) {
   .contact {
@@ -611,9 +609,6 @@ body {
 @media screen and (min-width: 768px) {
   .contact {
     display: block;
-  }
-  .contact__item:not(:last-child) {
-    margin-left: 50px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -627,9 +622,6 @@ body {
     padding-top: 32px;
     padding-bottom: 32px;
   }
-  .contact__item:not(:last-child) {
-    margin-right: 30px;
-  }
 }
 
 .contact__link:hover,
@@ -640,7 +632,6 @@ body {
 
 .contact .contact__item + .contact__item {
   display: block;
-  margin-left: 50px;
 }
 
 .contact__link {
@@ -768,7 +759,7 @@ body {
   margin-bottom: 32px;
 }
 .mobil-nav__link {
-  color: var(--primary-text-color);
+  color: var(--title-text-color);
 }
 
 .current {
@@ -928,11 +919,6 @@ body {
     margin-bottom: 30px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .feature__title {
-    margin-bottom: 30px;
-  }
-}
 
 .feature__item {
   display: flex;
@@ -1031,13 +1017,15 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  margin-bottom: 50px;
   text-align: center;
   color: var(--title-text-color);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .team-title {
     font-size: 28px;
     line-height: 1.17;
+    margin-bottom: 30px;
   }
 }
 
@@ -1052,14 +1040,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
-    margin-top: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .team-name {
     display: flex;
     margin: -15px;
-    margin-top: 50px;
   }
 }
 
@@ -1290,7 +1276,8 @@ body {
 }
 
 .card {
-  display: block;
+  display: flex;
+  flex-direction: column;
   transition: color 250ms var(--timing-function), border 250ms var(--timing-function), box-shadow 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
 .card:hover, .card:focus {
@@ -1315,7 +1302,6 @@ body {
   height: 100%;
   transform: translateY(100%);
   transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function), transform 250ms var(--timing-function);
-  overflow: auto;
   opacity: 0;
 }
 .pic:hover .top-text, .pic:focus .top-text {
@@ -1325,7 +1311,6 @@ body {
 
 .pic {
   display: block;
-  border: 1px solid var(--border-color);
 }
 @media screen and (max-width: 767px) {
   .pic {
@@ -1349,8 +1334,10 @@ body {
 }
 
 .cards {
+  flex-grow: 1;
   border-radius: 0px 0px 4px 4px;
   padding: 20px 24px;
+  border: 1px solid var(--border-color);
 }
 
 .card {
@@ -1401,9 +1388,10 @@ body {
   }
 }
 
-@media screen and (max-width: 767x) {
+@media screen and (max-width: 767px) {
   .footer__contacts {
     text-align: center;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1444,11 +1432,6 @@ body {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
-}
-@media screen and (max-width: 767px) {
-  .address {
-    margin-bottom: 60px;
-  }
 }
 .address__item:not(:first-child) {
   margin-top: 9px;
