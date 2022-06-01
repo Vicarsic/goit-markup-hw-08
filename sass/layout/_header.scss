@@ -237,8 +237,9 @@
 // < !-- Mobile menu -->
 
 .menu {
-    display: flex;
-    flex-grow: 1;
+    margin-left: auto;
+    // display: flex;
+    // flex-grow: 1;
 
     background-color: transparent;
 
@@ -252,7 +253,6 @@
 
 .menu-toggle {
     display: flex;
-    margin-left: auto;
     padding: 0;
 
     background-color: transparent;

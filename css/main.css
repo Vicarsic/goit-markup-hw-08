@@ -674,8 +674,7 @@ body {
   }
 }
 .menu {
-  display: flex;
-  flex-grow: 1;
+  margin-left: auto;
   background-color: transparent;
 }
 @media screen and (max-width: 767px) {
@@ -686,7 +685,6 @@ body {
 
 .menu-toggle {
   display: flex;
-  margin-left: auto;
   padding: 0;
   background-color: transparent;
   border: none;
@@ -1264,11 +1262,17 @@ body {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
   .filter {
+    margin-bottom: 30px;
     justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
   }
 }
 
