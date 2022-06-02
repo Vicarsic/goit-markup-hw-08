@@ -212,6 +212,13 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
 }
+@media screen and (max-width: 767px) {
+  .backdrop {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 93px;
+  }
+}
 
 .backdrop.is-hidden .modal {
   transform: scale(0.5) rotate(-270deg);
